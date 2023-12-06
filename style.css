@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      background: rgb(174,107,226);
+      background: linear-gradient(12deg, rgba(174,107,226,1) 0%, rgba(212,99,231,1) 100%);
+      font-family: sans-serif;
+      padding: 5px;
+
+  }
+  main{
+      max-width: 400px;
+      width: 100%;
+      background-color: white;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 5px;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+  }
+  main h3{
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 10px;
+  }
+  /* main img{
+      width: 100px;
+      aspect-ratio: 1;
+  } */
+  .inputes{
+      width: 90%;
+      margin-top: 20px;
+  }
+  .inputes input{
+      width: 100%;
+      padding: 8px 5px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid black;
+  } 
+  button{
+      padding: 8px 30px;
+      margin-top: 30px;
+      color: black;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      border: 2px solid rgb(174,107,226);
+      position: relative;
+      z-index: 1;
+      font-weight: 550;
+      font-size: 0.9rem;
+      transition: all 0.4s ease-in-out;
+  }
+  button::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #ae6be2;
+      height: 100%;
+      width: 0;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+  }
+     button::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #d463e7;
+      height: 100%;
+      width: 0;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+  }
+  button:hover{
+    color: white;
+    border-color: transparent;
+    
+  }
+  button:hover::before,
+  button:active::before{
+      width: 50%;
+  }
+    button:hover::after,
+    button:active::after{
+      width: 51%;
+  }
+  .image{
+      margin-top: 30px;
+  }
+  /* #username{
+      font-size: 1rem;
+      font-weight: 550;
+      color: #ae6be2;
+      margin-top: 10px;
+  } */
+  .rem{
+      font-style: italic;
+      font-weight: 550;
+      margin-top: 10px;
+      opacity: 0.9;
+      font-size: 0.9rem;
+  }
